@@ -1,0 +1,87 @@
+
+.homepageBanner{
+    display: block;
+    width: 100%;
+}
+.aboutSinger {
+    background-color: #f8ffff;
+    margin: auto;
+    padding: 10px 170px;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    background: #1E1F25;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+
+ul{
+    background-color: #1E1F25;
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    height: 12vh;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+li, .banner {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+}
+
+a {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+}
+
+.sub-menu {
+    display: none;
+    background-color: #27262c;
+
+}
+.sub-menu li{
+    padding: 10px;
+}
+li:hover{
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 blueviolet;
+    font-weight: bold;
+}
+
+
+.banner:hover .sub-menu {
+    display: block;
+}
+.albom{
+    display: block;
+    width: 100%;
+    height: 600px;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: darkgrey;
+}
