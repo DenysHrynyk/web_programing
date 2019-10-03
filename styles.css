@@ -1,0 +1,145 @@
+.homepageBanner{
+    display: block;
+    width: 100%;
+}
+.aboutSinger {
+    background-color: #f8ffff;
+    margin: auto;
+    padding: 10px 170px;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+body{
+    background: #1E1F25;
+}
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+
+ul{
+    background-color: #1E1F25;
+    display: flex;
+    width: 100%;
+    max-height: 100%;
+    height: 12vh;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+}
+li, .banner {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+}
+
+a {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+}
+
+.sub-menu {
+    display: none;
+    background-color: #27262c;
+
+}
+.sub-menu li{
+    padding: 10px;
+}
+li:hover{
+    background-size: 100% 100%;
+    color: #27262c;
+    animation: spring 300ms ease-out;
+    text-shadow: 0 -1px 0 blueviolet;
+    font-weight: bold;
+}
+.banner:hover .sub-menu {
+    display: block;
+}
+.albom{
+    display: block;
+    width: 100%;
+    height: 600px;
+
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #111
+
+}
+
+tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*position: center;*/
+    /*top: 50%;*/
+padding: 100px 100px;
+}
+body{
+    background-color: whitesmoke;
+}
+.logo_img{
+    animation-name: rotation;
+    animation-duration: 1s;
+}
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.img1{transition: all .2s ease-in-out;}
+.img1:hover{transform: scale(1.1);}
+.img2:hover{transform: scale(1.1);}.img2{transition: all .2s ease-in-out;}
+.img3:hover{transform: scale(1.1);}.img3{transition: all .2s ease-in-out;}
+.img4:hover{transform: scale(1.1);}.img4{transition: all .2s ease-in-out;}
+.img5:hover{transform: scale(1.1);}.img5{transition: all .2s ease-in-out;}
+.img6:hover{transform: scale(1.1);}.img6{transition: all .2s ease-in-out;}
+
+
+td:hover img{
+    box-shadow: 10px 10px 50px 0 rgba(0, 0, 0, 0.51);
+}
+td{
+    padding: 10px 50px;
+}
+
+
+td:hover img,
+td:hover .glow-wrap{
+    margin-top: 0;
+}
+
+h3{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+}
+
+
+footer{
+    background: #1E1F25;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: darkgrey;
+}
