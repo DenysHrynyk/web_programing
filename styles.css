@@ -1,0 +1,38 @@
+.aboutSinger{
+    margin: 5%;
+
+}
+* {
+    list-style-type: none;
+}
+
+li, .banner {
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ebebeb;
+    min-width: 80px;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+    hight: auto;
+
+}
+.navbar.navbar-1 .navbar-toggler-icon {
+     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+ }
+.footer{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    background-color: darkgrey;
+}
+
+.nav-item{
+    width: 15%;
+}
+.homepageBanner{
+    display: block;
+    margin: auto;
+}
