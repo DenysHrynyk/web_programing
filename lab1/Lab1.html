@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How Did We Get Here? - Dive Into HTML5</title>
+    <style>
+        p{
+            font-size: 105%;
+            line-height: 1.6;
+    }
+        body {
+            word-spacing: 0.1em;
+            max-width: 960px;
+            margin: 0 auto;
+            paadding-bottom: 2em;
+        }
+
+        .rightpic {
+            float: right;
+            margin: 30px 30px;
+        }
+
+        .leftpic {
+            float: left;
+            margin: 30px 30px;
+        }
+        table {
+            width: 100%;
+            background: black;
+            color: black;
+            border-spacing: 2px;
+        }
+
+        td, th {
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+        }
+
+    </style>
+
+</head>
+<body>
+<p>You are here: <a href=" https://www.google.com/intl/ru/gmail/about/">Home</a>:<a href="">Dive Into HTML5</a></p>
+    <h1 align="center">№1.</h1>
+    <h1 align ="center">"How Did We Get Here?"</h1>
+        <br>
+    <h3 align="center"><a href="">show table of contents</a></h3>
+        <br>
+    <p align="center"><img src="photo_2019-09-11_16-08-18.jpg" alt="Dolphin"></p>
+        <br>
+    <h1 align="center">DIVING IN</h1>
+    <p>Recently, I stumbled across a quote from a Mozilla developer <a href="sdfsdf">about the tension inherent in creating standards</a>
+    Implementations and specifications have to do a delicate dance together. You don’t want implementations
+    o happen before the specification is finished, because people start depending on the details of
+    implementations and that constrains the specification. However, you also don’t want the specification to be
+    finished before there are implementations and author experience with those implementations, because you need the
+    feedback. There is unavoidable tension here, but we just have to muddle on through.
+        <br><br>
+
+        Keep this quote in the back of your mind, and let me explain how HTML5 came to be.
+     </p>
+    <p align="center">
+    <img src="openclipart.org_johnny_automatic_animals_on_see_saw.png" width="526" height="116" alt="animals on a seesaw">
+    </p>
+        <br>
+    <h1>
+        <p align="center">MIME TYPES</p>
+    </h1>
+        <br>
+    <p>This book is about HTML5, not previous versions of HTML, and not any version of XHTML. But to understand the history of
+    HTML5 and the motivations behind it, you need to understand a few technical details first. Specifically, MIME types.
+        <br>
+    Every time your web browser requests a page, the web server sends “headers” before it sends the actual page markup. These
+    headers are normally invisible, although there are web development tools that will make them visible if you’re interested. But
+        the headers are important, because they tell your browser how to interpret the page markup that follows. The most important</p>
+    eader is called Content-Type, and it looks like this:</p>
+                                <br>
+    <p>Content-Type: text/html</p>
+    <br>
+    <p>“text/html” is called the “content type” or “MIME type” of the page. This header is the only thing that determines what a
+        particular resource truly is, and therefore how it should be rendered. Images have their own MIME types (image/jpeg for
+        JPEG images, image/png for PNG images, and so on). JavaScript files have their own MIME type. CSS stylesheets have their
+        own MIME type. Everything has its own MIME type. The web runs on MIME types.
+        <br>
+        Of course, reality is more complicated than that. The first generation of web servers (and I’m talking web servers from 1993)
+        didn’t send the Content-Type header because it didn’t exist yet. (It wasn’t invented until 1994.) For compatibility reasons
+        that date all the way back to 1993, some popular web browsers will ignore the Content-Type header under certain
+        circumstances. (This is called “content sniffing.”) But as a general rule of thumb, everything you’ve ever looked at on the web<
+        — HTML pages, images, scripts, videos, PDFs, anything with a URL — has been served to you with a specific MIME type in
+        the Content-Type header.</p>
+        <br>
+    <p>Tuck that under your hat. We’ll come back to it.</p>
+
+
+        <br>
+    <p align="center"><img src="photo_2019-09-11_16-08-18.jpg" alt="Dolphin"></p>
+<h1>
+    <p align="center"> A LONG DIGRESSION INTO HOW STANDARDS <br> ARE MADE</p>
+    </h1>
+
+    <p>
+        <img src="openclipart.org_johnny_automatic_monkey_reading.png" class="rightpic">
+        Why do we have an <img> element? That’s not a question you hear every day. Obviously
+
+        someone must have created it.
+        These things don’t just appear out of nowhere. Every element, every attribute, every feature of HTML that
+        you’ve ever used — someone created them, decided how they should work, and wrote it all down. These people
+        are not gods, nor are they flawless. They’re just people. Smart people, to be sure. But just people.
+
+<br><br>
+        One of the great things about standards that are developed “out in the open”
+        is that you can go back in time and answer these kinds of questions. Discussions
+        occur on mailing lists, which are usually archived and publicly searchable.
+        So I decided to do a bit of “email archaeology” to try to answer the question, “Why do we have an
+        <img> element?” I had to go back to before there was an organization called the World Wide Web Consortium
+        (W3C). I went back to the earliest days of the web, when you could count the number of web servers with both
+        hands and maybe a couple of toes.
+
+</h1>
+        <br>
+    <h1><p align="center">POSTSCRIPT </p></h1>
+        <br>
+    <p>In October 2009, the W3C <a href="dfhglfg'hmsfg'nmf">shut down the XHTML 2 Working Group</a> and
+        <a href="sdgsdgssd">issued this statement to explain their decision</a>
+        <br>
+
+                When W3C announced the HTML and XHTML 2 Working Groups in March 2007, we indicated that we would
+                continue to monitor the market for XHTML 2. W3C recognizes the importance of a clear signal to the community
+                about the future of HTML.
+                <br>
+                While we recognize the value of the XHTML 2 Working Group’s contributions over the years, after discussion with
+                the participants, W3C management has decided to allow the Working Group’s charter to expire at the end of 2009
+                and not to renew it.</p>
+
+        <br>
+    <p>The ones that win are the ones that ship.</p>
+        <br>
+    <p align="center"><img src="photo_2019-09-11_16-08-18.jpg" alt="Dolphin"></p>
+        <br>
+    <h1>
+    <p align="center">FURTHER READING</p>
+    </h1>
+        <br>
+    <ul>
+       <li>
+           <p><a href="">The History of the Web</a>, an old draft by Ian Hickson </p>
+       </li>
+       <li>
+           <p><a href="">HTML/History</a>, by Michael Smith, Henri Sivonen, and others </p>
+       </li>
+       <li>
+           <p><a href="">A Brief History of HTML</a>, by Scott Reynen</p>
+       </li>
+   </ul>
+        <br>
+<p align="center">
+    <img src="photo_2019-09-11_16-08-18.jpg" alt="Dolphin">
+</p>
+<table style="position: relative;left: -1%" border="1" align=center;>
+    <tr>
+        <th aligh=left>
+            <div align="left" style="background-color:black;color:white;padding:
+4px">DID YOU KNOW?</div>
+        </th>
+    </tr>
+    <tr>
+        <td height="70"><p style="position: relative; left: 5%; width: 91%;
+        line-height: 175%">
+            <img src="man_with_money.jpg" width="250" height="300" class="rightpic">
+            In association with Google Press, O’Reilly is distributing this book in a variety of formats, including paper,
+            ePub, Mobi, and DRM-free PDF. The paid edition is called “HTML5: Up & Running,” and it is available now.
+            This chapter is included in the paid edition.
+<br><br>
+                If you liked this chapter and want to show your appreciation, you can <a href="">buy “HTML5: Up & Running” with this
+                affiliate link</a> or <a href="">buy an electronic edition directly from O’Reilly.</a> You’ll get a book, and I’ll get a buck.
+            I do not currently accept direct donations.
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
